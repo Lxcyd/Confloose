@@ -1,32 +1,32 @@
 # ~/.bashrc
-  2
-  3 # If not running interactively, don't do anything
-  4 [[ $- != *i* ]] && return
-  5
-  6 if [ -d ~/afs/bin ] ; then
-  7 »·······export PATH=~/afs/bin:$PATH
-  8 fi
-  9
- 10 if [ -d ~/.local/bin ] ; then
- 11 »·······export PATH=~/.local/bin:$PATH
- 12 fi
- 13
- 14
- 15 export LANG=en_US.utf8
- 16 export NNTPSERVER="news.epita.fr"
- 17
- 18 export EDITOR=vim
- 19 #export EDITOR=emacs
- 20
- 21 # Color support for less
- 22 #export LESS_TERMCAP_mb=$'\E[01;31m'       # begin blinking
- 23 #export LESS_TERMCAP_md=$'\E[01;38;5;74m'  # begin bold
- 24 #export LESS_TERMCAP_me=$'\E[0m'           # end mode
- 25 #export LESS_TERMCAP_se=$'\E[0m'           # end standout-mode
- 26 #export LESS_TERMCAP_so=$'\E[38;5;246m'    # begin standout-mode -     info box
- 27 #export LESS_TERMCAP_ue=$'\E[0m'           # end underline
- 28 #export LESS_TERMCAP_us=$'\E[04;38;5;146m' # begin underline
- 29
- 30 alias ls='ls --color=auto'
- 31 alias grep='grep --color -n'
- 32 PS1='[\u@\h:\W]$'
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+if [ -d ~/afs/bin ] ; then
+	export PATH=~/afs/bin:$PATH
+fi
+
+if [ -d ~/.local/bin ] ; then
+	export PATH=~/.local/bin:$PATH
+fi
+
+
+export LANG=en_US.utf8
+export NNTPSERVER="news.epita.fr"
+
+export EDITOR=vim
+#export EDITOR=emacs
+
+# Color support for less
+#export LESS_TERMCAP_mb=$'\E[01;31m'       # begin blinking
+#export LESS_TERMCAP_md=$'\E[01;38;5;74m'  # begin bold
+#export LESS_TERMCAP_me=$'\E[0m'           # end mode
+#export LESS_TERMCAP_se=$'\E[0m'           # end standout-mode
+#export LESS_TERMCAP_so=$'\E[38;5;246m'    # begin standout-mode - info box
+#export LESS_TERMCAP_ue=$'\E[0m'           # end underline
+#export LESS_TERMCAP_us=$'\E[04;38;5;146m' # begin underline
+
+alias ls='ls --color=auto'
+alias grep='grep --color -n'
+PS1='[\u@\h:\W]$'
