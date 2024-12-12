@@ -3,4 +3,5 @@ while [ true ]; do
 killall -q emacs
 
 done
+alias vroom='vim '
 
